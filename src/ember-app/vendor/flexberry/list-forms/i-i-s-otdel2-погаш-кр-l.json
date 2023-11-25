@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel2-погаш-кр-e",
+  "editForm": "i-i-s-otdel2-погаш-кр-e",
+  "external": false,
+  "caption": "Погаш кр",
+  "name": "IISOtdel2ПогашКрL",
+  "className": "ПогашКрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel2-погаш-кр",
+      "modelProjection": "ПогашКрL"
+    }
+  ]
+}

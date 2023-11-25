@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Otdel2",
+  "applicationTitle": "Otdel2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "otdel2",
+      "caption": "Otdel2",
+      "title": "Otdel2",
+      "children": [
+        {
+          "link": "i-i-s-otdel2-отдел-кр-l",
+          "menuName": null,
+          "caption": "Отдел кр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel2-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel2-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel2-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel2-закл-кр-дог-l",
+          "menuName": null,
+          "caption": "Закл кр дог",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel2-проверка-кр-кл-l",
+          "menuName": null,
+          "caption": "Проверка кр кл",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel2-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-otdel2-погаш-кр-l",
+          "menuName": null,
+          "caption": "Погаш кр",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

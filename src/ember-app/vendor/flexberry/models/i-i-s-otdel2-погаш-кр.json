@@ -1,0 +1,246 @@
+﻿{
+  "name": "IISOtdel2ПогашКр",
+  "modelName": "i-i-s-otdel2-погаш-кр",
+  "className": "ПогашКр",
+  "nameSpace": "IIS.Otdel2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "видПогашКр",
+      "type": "i-i-s-otdel2-вид-погаш-кр",
+      "flexberryType": "ВидПогашКр",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаПогашКр",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заклКрДог",
+      "relatedTo": "i-i-s-otdel2-закл-кр-дог",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиенты",
+      "relatedTo": "i-i-s-otdel2-клиенты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-otdel2-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПогашКрE",
+      "modelName": "i-i-s-otdel2-погаш-кр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "видПогашКр",
+          "caption": "Вид погаш кр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "суммаПогашКр",
+          "caption": "Сумма погаш кр",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ЦельКр",
+          "lookupValueField": "цельКр",
+          "relationName": "ЗаклКрДог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цельКр",
+              "caption": "Цель кр",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Закл кр дог",
+          "name": "заклКрДог",
+          "relatedTo": "i-i-s-otdel2-закл-кр-дог",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-otdel2-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИОКлиента",
+          "lookupValueField": "фИОКлиента",
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОКлиента",
+              "caption": "Ф и о клиента",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Клиенты",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-otdel2-клиенты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПогашКрL",
+      "modelName": "i-i-s-otdel2-погаш-кр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "видПогашКр",
+          "caption": "Вид погаш кр",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "суммаПогашКр",
+          "caption": "Сумма погаш кр",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-otdel2-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОКлиента",
+              "caption": "Ф и о клиента",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о клиента",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-otdel2-клиенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаклКрДог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКрДог",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "заклКрДог",
+          "relatedTo": "i-i-s-otdel2-закл-кр-дог",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

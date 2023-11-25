@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel2-сотрудники-e",
+  "editForm": "i-i-s-otdel2-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISOtdel2СотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel2-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

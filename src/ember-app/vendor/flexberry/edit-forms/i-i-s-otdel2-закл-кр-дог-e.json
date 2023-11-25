@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиенты",
+      "projection": "КлиентыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Закл кр дог",
+  "name": "IISOtdel2ЗаклКрДогE",
+  "className": "ЗаклКрДогE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel2-закл-кр-дог",
+      "modelProjection": "ЗаклКрДогE"
+    }
+  ]
+}

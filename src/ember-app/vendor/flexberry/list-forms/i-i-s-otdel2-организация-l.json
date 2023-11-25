@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel2-организация-e",
+  "editForm": "i-i-s-otdel2-организация-e",
+  "external": false,
+  "caption": "Организация",
+  "name": "IISOtdel2ОрганизацияL",
+  "className": "ОрганизацияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel2-организация",
+      "modelProjection": "ОрганизацияL"
+    }
+  ]
+}

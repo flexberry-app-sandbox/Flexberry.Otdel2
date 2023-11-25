@@ -1,0 +1,134 @@
+<h3 class="ui header">{{t "forms.i-i-s-otdel2-закл-кр-дог-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel2-закл-кр-дог-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-otdel2-закл-кр-дог-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.цельКр
+      class=(if (v-get validationModel "цельКр" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel2-закл-кр-дог-e.цельКр-caption")
+      data-test-i-i-s-otdel2-закл-кр-дог-e-цельКр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "цельКр" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-otdel2-закл-кр-дог-e-видПогашКр="true">
+    <label>{{t "forms.i-i-s-otdel2-закл-кр-дог-e.видПогашКр-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-otdel2-вид-погаш-кр")
+      value=model.видПогашКр
+      class=(if (v-get validationModel "видПогашКр" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видПогашКр" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-otdel2-закл-кр-дог-e-видКредита="true">
+    <label>{{t "forms.i-i-s-otdel2-закл-кр-дог-e.видКредита-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-otdel2-вид-кредита")
+      value=model.видКредита
+      class=(if (v-get validationModel "видКредита" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видКредита" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.суммаКредита
+      class=(if (v-get validationModel "суммаКредита" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel2-закл-кр-дог-e.суммаКредита-caption")
+      data-test-i-i-s-otdel2-закл-кр-дог-e-суммаКредита=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "суммаКредита" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерКрДог
+      class=(if (v-get validationModel "номерКрДог" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel2-закл-кр-дог-e.номерКрДог-caption")
+      data-test-i-i-s-otdel2-закл-кр-дог-e-номерКрДог=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерКрДог" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.содержДогЗал
+      class=(if (v-get validationModel "содержДогЗал" "isInvalid") "error")
+      label=(t "forms.i-i-s-otdel2-закл-кр-дог-e.содержДогЗал-caption")
+      data-test-i-i-s-otdel2-закл-кр-дог-e-содержДогЗал=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "содержДогЗал" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel2-закл-кр-дог-e.клиенты-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.клиенты
+      displayAttributeName="фИОКлиента"
+      autocomplete=true
+      relationName="клиенты"
+      projection="КлиентыL"
+      title=(t "forms.i-i-s-otdel2-закл-кр-дог-e.клиенты-caption")
+      readonly=readonly
+      componentName="клиентыLookup"
+      class=(if (v-get validationModel "клиенты" "isInvalid") "error")
+      data-test-i-i-s-otdel2-закл-кр-дог-e-клиенты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "клиенты" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-otdel2-закл-кр-дог-e.организация-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организация
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="организация"
+      projection="ОрганизацияL"
+      title=(t "forms.i-i-s-otdel2-закл-кр-дог-e.организация-caption")
+      readonly=readonly
+      componentName="организацияLookup"
+      class=(if (v-get validationModel "организация" "isInvalid") "error")
+      data-test-i-i-s-otdel2-закл-кр-дог-e-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организация" "message")}}
+  </div>
+</form>

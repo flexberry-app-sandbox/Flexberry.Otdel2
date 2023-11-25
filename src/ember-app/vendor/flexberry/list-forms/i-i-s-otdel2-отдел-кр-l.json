@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-otdel2-отдел-кр-e",
+  "editForm": "i-i-s-otdel2-отдел-кр-e",
+  "external": false,
+  "caption": "Отдел кр",
+  "name": "IISOtdel2ОтделКрL",
+  "className": "ОтделКрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-otdel2-отдел-кр",
+      "modelProjection": "ОтделКрL"
+    }
+  ]
+}
