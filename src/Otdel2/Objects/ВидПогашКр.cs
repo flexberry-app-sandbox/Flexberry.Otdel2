@@ -12,6 +12,7 @@ namespace IIS.Otdel2
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,19 +29,22 @@ namespace IIS.Otdel2
     public enum ВидПогашКр
     {
         
-        // *** Start programmer edit section *** (ВидПогашКр.АннуитПл CustomAttributes)
-
-        // *** End programmer edit section *** (ВидПогашКр.АннуитПл CustomAttributes)
-        АннуитПл,
-        
         // *** Start programmer edit section *** (ВидПогашКр.ДиффПл CustomAttributes)
 
         // *** End programmer edit section *** (ВидПогашКр.ДиффПл CustomAttributes)
+        [Caption("Дифференциированный Платеж")]
         ДиффПл,
+        
+        // *** Start programmer edit section *** (ВидПогашКр.АннуитПл CustomAttributes)
+
+        // *** End programmer edit section *** (ВидПогашКр.АннуитПл CustomAttributes)
+        [Caption("Аннуитетный платеж")]
+        АннуитПл,
         
         // *** Start programmer edit section *** (ВидПогашКр.ПлРавДол CustomAttributes)
 
         // *** End programmer edit section *** (ВидПогашКр.ПлРавДол CustomAttributes)
+        [Caption("Платежи равными долями")]
         ПлРавДол,
     }
 }

@@ -12,6 +12,7 @@ namespace IIS.Otdel2
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,21 +32,25 @@ namespace IIS.Otdel2
         // *** Start programmer edit section *** (ВидКредита.Ипотечный CustomAttributes)
 
         // *** End programmer edit section *** (ВидКредита.Ипотечный CustomAttributes)
+        [Caption("Ипотечный")]
         Ипотечный,
         
         // *** Start programmer edit section *** (ВидКредита.Потребит CustomAttributes)
 
         // *** End programmer edit section *** (ВидКредита.Потребит CustomAttributes)
+        [Caption("Потребительский")]
         Потребит,
         
         // *** Start programmer edit section *** (ВидКредита.Автокредит CustomAttributes)
 
         // *** End programmer edit section *** (ВидКредита.Автокредит CustomAttributes)
+        [Caption("Автокредит")]
         Автокредит,
         
         // *** Start programmer edit section *** (ВидКредита.Коммерческий CustomAttributes)
 
         // *** End programmer edit section *** (ВидКредита.Коммерческий CustomAttributes)
+        [Caption("Коммерческий")]
         Коммерческий,
     }
 }

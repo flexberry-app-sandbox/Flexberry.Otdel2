@@ -28,49 +28,49 @@ export default Controller.extend({
             link: 'i-i-s-otdel2-отдел-кр-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-отдел-кр-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-отдел-кр-l.title'),
-            icon: 'archive',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-otdel2-организация-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-организация-l.title'),
-            icon: 'folder open',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-otdel2-клиенты-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-клиенты-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-клиенты-l.title'),
-            icon: 'calendar',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-otdel2-должности-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-должности-l.title'),
-            icon: 'suitcase',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-otdel2-закл-кр-дог-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-закл-кр-дог-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-закл-кр-дог-l.title'),
-            icon: 'tags',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-otdel2-проверка-кр-кл-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-проверка-кр-кл-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-проверка-кр-кл-l.title'),
-            icon: 'tags',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-otdel2-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-сотрудники-l.title'),
-            icon: 'archive',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-otdel2-погаш-кр-l',
             caption: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-погаш-кр-l.caption'),
             title: i18n.t('forms.application.sitemap.otdel2.i-i-s-otdel2-погаш-кр-l.title'),
-            icon: 'tags',
+            icon: 'table',
             children: null
           }]
         }

@@ -62,9 +62,9 @@ CREATE TABLE [ЗаклКрДог] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [ВидКредита] VARCHAR(12)  NULL,
+	 [ВидКредита] VARCHAR(15)  NULL,
 
-	 [ВидПогашКр] VARCHAR(8)  NULL,
+	 [ВидПогашКр] VARCHAR(26)  NULL,
 
 	 [Дата] DATETIME  NULL,
 
@@ -123,7 +123,7 @@ CREATE TABLE [ПогашКр] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [ВидПогашКр] VARCHAR(8)  NULL,
+	 [ВидПогашКр] VARCHAR(26)  NULL,
 
 	 [Дата] DATETIME  NULL,
 

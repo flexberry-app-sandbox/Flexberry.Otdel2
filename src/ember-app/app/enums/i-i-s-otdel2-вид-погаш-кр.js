@@ -1,7 +1,7 @@
 import { createEnum } from 'ember-flexberry-data/utils/enum-functions';
 
 export default createEnum({
-  АннуитПл: '',
-  ДиффПл: '',
-  ПлРавДол: ''
+  ДиффПл: 'Дифференциированный Платеж',
+  АннуитПл: 'Аннуитетный платеж',
+  ПлРавДол: 'Платежи равными долями'
 });

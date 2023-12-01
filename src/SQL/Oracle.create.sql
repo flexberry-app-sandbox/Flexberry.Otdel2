@@ -75,9 +75,9 @@ CREATE TABLE "ЗаклКрДог"
 
 	"ЦельКр" NVARCHAR2(255) NULL,
 
-	"ВидПогашКр" NVARCHAR2(8) NULL,
+	"ВидПогашКр" NVARCHAR2(26) NULL,
 
-	"ВидКредита" NVARCHAR2(12) NULL,
+	"ВидКредита" NVARCHAR2(15) NULL,
 
 	"СуммаКредита" NUMBER(10) NULL,
 
@@ -140,7 +140,7 @@ CREATE TABLE "ПогашКр"
 
 	"Дата" DATE NULL,
 
-	"ВидПогашКр" NVARCHAR2(8) NULL,
+	"ВидПогашКр" NVARCHAR2(26) NULL,
 
 	"СуммаПогашКр" NUMBER(10) NULL,
 
